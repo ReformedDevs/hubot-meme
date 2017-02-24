@@ -41,7 +41,7 @@
 #   lukewaite, Luke Waite
 
 # Should hubot 'respond' or 'listen'?
-listen_func = if process.env.HUBOT_EXTRA_MEMES then 'hear' else 'respond'
+listen_func = if (process.env.HUBOT_EXTRA_MEMES == 'true') then 'hear' else 'respond'
 
 memeGenerator = require "./lib/memecaptain.coffee"
 
